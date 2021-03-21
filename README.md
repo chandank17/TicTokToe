@@ -15,9 +15,7 @@ This application is built using ReactJS, Redux.
 
 Game Screen Shot(s)
 
-![Getting Started](./images/desktop_1.png)
-
-![Getting Started](./images/desktop_2.png)
+![Getting Started](./images/desktop_1.png)  ![Getting Started](./images/desktop_2.png)
 
 ![Getting Started](./images/desktop_3.png)
 
