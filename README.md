@@ -1,7 +1,8 @@
 ## Tic-Tac-Toe
 
-Demo:
-    [r2h]: http://github.com/github/markup/tree/master/lib/github/commands/rest2html
+Play Here 
+  https://chandan-tictoctoe.netlify.app/
+
 
 
 ## RULES FOR TIC-TAC-TOE
