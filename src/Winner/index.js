@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 
 export default function Winner() {
     const { players, numberofwins, winner } = useSelector((state) => state.ticToc);
+    console.log('Hi');
 
 
     return (
