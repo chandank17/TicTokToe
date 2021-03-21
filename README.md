@@ -1,5 +1,9 @@
 ## Tic-Tac-Toe
 
+Demo:
+    [r2h]: http://github.com/github/markup/tree/master/lib/github/commands/rest2html
+
+
 ## RULES FOR TIC-TAC-TOE
 
 1. The game is played on a grid that's 3 squares by 3 squares.
@@ -10,12 +14,13 @@
 
 4. When all 9 squares are full, the game is over. If no player has 3 marks in a row, the game ends in a tie.
 
-
 This application is built using ReactJS, Redux.
 
-Game Screen Shot(s)
+## Game Screen Shot(s)
 
-![Getting Started](./images/desktop_1.png)  ![Getting Started](./images/desktop_2.png)
+![Getting Started](./images/desktop_1.png)  
+
+![Getting Started](./images/desktop_2.png)
 
 ![Getting Started](./images/desktop_3.png)
 
@@ -23,22 +28,21 @@ Game Screen Shot(s)
 
 ![Getting Started](./images/desktop_5.png)
 
-
-
 ## Installation and Setup Instructions
 
-Clone down this repository. You will need `node` and `npm` installed globally on your machine.
+Clone down this repository. You need `node` and `npm` installed globally on your machine.
 
 Installation:
-`npm install`
+ `npm install`
 
 To Run Test Suite:  
  `npm test`
 
 To Start Server:
-`npm start`
+ `npm start`
 
-To Visit Deployed App:
-`https://chandan-tictoctoe.netlify.app/`
+
+
+
 
 
