@@ -1,0 +1,293 @@
+.game-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.game-div{
+    width: 480px;
+    height: 480px;
+    border: 2px dashed #FFFFFF;
+    border-radius: 46px;
+    border: 2px dashed rgba(256, 256, 256, 0.1);
+}
+
+.game-div-1{
+    background: rgba(37, 57, 82, 1);
+    box-shadow: 0px 3px 6px rgb(0 0 0 / 87%);
+    border-radius: 46px;
+    opacity: 1;
+    margin: 18px;
+    width: 444px;
+    height: 444px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    animation-name: PlayerDiv;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+.game-div-1 h1{
+    text-align: left;
+    font: normal normal normal 23px/25px Poppins;
+    letter-spacing: 0.83px;
+    color: rgba(240, 240, 240, 1);
+}
+
+.game-div-1 h1 span{
+    font: normal normal 600 23px/25px Poppins;
+    letter-spacing: 0.83px;
+    color: rgba(251, 162, 2, 1);
+}
+
+.player-1, .player-2{
+    width: 123px;
+    height: 137px;
+    background: #253952 0% 0% no-repeat padding-box;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    border-radius: 24px;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    
+}
+
+.player-1{
+    animation-name: player1animation;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in;
+    position: relative;
+}
+
+.player-2{
+    animation-name: player2animation;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in;
+    position: relative;
+
+}
+
+
+@keyframes player1animation {
+    0%   {opacity: 0.6;left:-200px;}
+    100%  {opacity: 1;left:0px;}
+   
+}
+
+@keyframes player2animation {
+    0%   {opacity: 0.6;right:-200px;}
+    100%  {opacity: 1;right:0px;}
+   
+}
+
+.grid-boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+
+.player-1,  p{
+    letter-spacing: 0.4px;
+    color: #FB9E01;
+    opacity: 1;
+}
+
+.player-1,  h2{
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    opacity: 1
+}
+
+
+.x-box {
+    animation-name: xBox;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in;
+  }
+  
+@keyframes xBox {
+    0%   {opacity: 0.5;width: 10px;}
+    100%  {opacity: 1;width: 81px;}
+   
+}
+
+.Box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 144px;
+    width: 146px;
+}
+
+
+.O-box {
+    width: 60px;
+    height: 60px;
+    border: 14px solid;
+    border-radius: 50%;
+    animation-name: OBox;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in;
+    
+  }
+  
+@keyframes OBox {
+    0%   {opacity: 0.5;width: 30px;height: 30px;}
+    100%  {opacity: 1;width: 60px;height: 60px;}  
+}
+
+.player-numberofwins-div{
+    display: grid;
+    grid-template-columns: repeat(6, 11px);
+    grid-column-gap: 4px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+
+.dot{
+    width: 10px;
+    height: 10px;
+    background: #FFFFFF;
+    border-radius: 50%;
+}
+
+.dot-disable{
+    opacity: 0.1;
+}
+
+.winner, .draw{
+    text-Align:center;
+    color: #FB9E01;
+    margin-bottom: 10px;
+    font-size: 31px;
+}
+
+.winborder{
+    border: 1px solid #FB9E01;
+}
+
+.O-box-small{
+    width: 40px;
+    height: 40px;
+    border: 8px solid;
+    border-radius: 50%;
+    border-color: #fff;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .game-container{
+        display: grid;
+        grid-template-areas:
+        'player1 player2'
+        'game game';
+    }
+
+    .player-1-container{
+        grid-area: player1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .player-2-container{
+        grid-area: player2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .player-1, .player-2{
+        height: auto;
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-row-gap: 10px;
+        text-align: center;
+        justify-items: center;
+    }
+
+    .Box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70px;
+        width: auto;
+    }
+
+    .x-box{
+        width: 35px;
+        height: 35px;
+    }
+
+    .O-box {
+        width: 23px;
+        height: 23px;
+        border: 8px solid;
+        border-radius: 50%;        
+      }
+
+      @keyframes OBox {
+        0%   {opacity: 0.5;width: 10px;height: 10px;}
+        100%  {opacity: 1;width: 15px;height: 15px;}
+       
+    }
+
+    .game-div{
+        width: 100%;
+        height: auto;  
+        grid-area: game;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .game-div-1{
+        width: auto;
+        height: auto;
+        padding: 20px;
+        align-items: flex-start;
+
+    }
+
+    .game-div-1 h1 {
+        text-align: left;
+        font: normal normal normal 16px/25px Poppins;
+        letter-spacing: 0.83px;
+        color: rgba(240, 240, 240, 1);
+        margin: 20px;
+        
+    }
+
+    .players-div-1 h1 span {
+        font: normal normal 600 16px/25px Poppins;
+        letter-spacing: 0.83px;
+        color: rgba(251, 162, 2, 1);
+    }
+
+    .O-box-small{
+        width: 26px;
+        height: 26px;
+        border: 8px solid;
+        border-radius: 50%;
+        border-color: #fff;
+    }
+
+    .winner, .draw{
+        font-size: 18px;
+    }
+}

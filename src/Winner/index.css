@@ -1,0 +1,109 @@
+.winner-main-div{
+    width: 480px;
+    height: 480px;
+    border: 2px dashed rgba(256, 256, 256, 0.1);
+    border-radius: 46px;
+    /* margin: 18px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.winner-inner-div{
+    width: 444px;
+    height: 444px;
+    background: #253952 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #000000DD;
+    border-radius: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.winner-name-div{
+    width: 230px;
+    height: 256px;
+    background: #253952 0% 0% no-repeat padding-box;
+    border: 3px solid #FB9E01;
+    border-radius: 10%;
+}
+
+.winner-text{
+    text-align: left;
+    font: normal normal normal 34px/37px Poppins;
+    letter-spacing: 1.22px;
+    color: #F0F0F0;
+    text-transform: uppercase;
+    margin: 40px 0px;
+}
+
+.winner-name{
+    text-align: center;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.winner-svg{
+    text-align: center;
+}
+
+.winner-player{
+    padding: 30px;
+    text-align: center;
+    color: #FB9E01;
+}
+
+@media only screen and (max-width: 600px) {
+    .winner-main-div{
+        width: 90%;
+        height: auto;
+        border: 2px dashed rgba(256, 256, 256, 0.1);
+        border-radius: 10px;
+        margin: 10px;
+    }
+
+    .winner-inner-div{
+        width: 87%;
+        height: auto;
+        background: #253952 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #000000DD;
+        border-radius: 20px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .winner-name-div{
+        width: 100%;
+        height: auto;
+        background: #253952 0% 0% no-repeat padding-box;
+        border: 3px solid #FB9E01;
+        border-radius: 10%;
+        font-size: 18px;
+    }
+
+    .winner-text{
+        text-align: left;
+        font: normal normal normal 24px/37px Poppins;
+        letter-spacing: 1.22px;
+        color: #F0F0F0;
+        text-transform: uppercase;
+        margin: 40px 0px;
+    }
+
+    .winner-svg{
+        margin-bottom: 30px;
+    }
+
+    .winner-svg img{
+        width: 50px;
+
+    }
+}
