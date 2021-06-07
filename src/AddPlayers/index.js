@@ -22,7 +22,7 @@ export default function AddPlayers() {
             <div className="players-div">
                 <div className="players-div-1">
                     <h1>
-                        Welcome to <span>TIC TAC TOE</span>
+                        Welcome to <span>TIC TAC TOE V1</span>
                     </h1>
 
                     <div className="input-div">
