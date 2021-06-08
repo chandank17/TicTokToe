@@ -14,7 +14,8 @@ function App() {
         <img src={`images/TicTacToe.svg`} alt="tictoc"></img>
       </div>
       { !startgame ? <AddPlayers /> : <Game />}
-    </div>
+      <div style={{ display: "flex", justifyContent: "center", color: 'white', margin: '20px' }}>Developed by Chandan K. Contact : 7676952626</div>
+    </div >
 
   );
 }
